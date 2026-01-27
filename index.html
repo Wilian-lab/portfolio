@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Wilian Pereira</title>
+    <title>Portfólio – Wilian Pereira</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <!-- FUNDO ANIMADO (VÍDEO) -->
-    <div class="bg">
-      <video class="bg__video" autoplay muted loop playsinline>
-        <source src="assets/hero.mp4" type="video/mp4" />
-      </video>
-      <div class="bg__overlay"></div>
-    </div>
+    <!-- Fundo em vídeo -->
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="assets/hero.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo em HTML5.
+    </video>
 
     <header class="topo">
-      <nav class="menu" aria-label="Menu principal">
+      <nav class="menu">
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
@@ -26,88 +23,87 @@
     </header>
 
     <main>
+      <!-- HERO -->
       <section id="inicio" class="secao secao-inicio">
-        <div class="hero">
-          <div class="hero__texto">
-            <p class="kicker">Python • Automação • Dados • Front-end</p>
-
+        <div class="hero-grid">
+          <div class="hero-texto">
+            <span class="tag">Python • Automação • Dados • Front-end</span>
             <h1>Wilian Pereira de Souza</h1>
-
-            <p class="subtitulo">
+            <p>
               Desenvolvedor Python focado em automação, análise de dados e
-              interfaces web.
+              interfaces web bem estruturadas.
             </p>
 
-            <div class="acoes-inicio">
-              <a href="#projetos" class="botao botao-principal">Ver projetos</a>
-              <a href="#contato" class="botao botao-secundario">Contato</a>
+            <div class="acoes">
+              <a href="#projetos" class="botao primario">Ver projetos</a>
+              <a href="#contato" class="botao secundario">Contato</a>
             </div>
           </div>
 
-          <div class="hero__foto">
-            <img src="assets/perfil.png" alt="Foto de Wilian Pereira" />
+          <div class="hero-foto">
+            <img src="assets/perfil.png" alt="Wilian Pereira" />
           </div>
         </div>
       </section>
 
+      <!-- SOBRE -->
       <section id="sobre" class="secao secao-sobre">
-        <div class="sobre-box">
-          <p class="destaque">
-            Transformo problemas reais em soluções práticas, organizadas e
-            fáceis de manter.
-          </p>
-
-          <p>
-            Sou desenvolvedor Python com foco em automação, análise de dados e
-            desenvolvimento web, atuando na criação de soluções práticas para
-            problemas reais, com atenção à organização, clareza e qualidade do
-            código.
-          </p>
-
-          <p>
-            Tenho experiência no desenvolvimento de aplicações web, APIs REST,
-            automações e interfaces interativas. Estou em constante evolução,
-            estudando e aplicando boas práticas para entregar soluções
-            confiáveis, escaláveis e bem estruturadas.
-          </p>
+        <div class="destaque">
+          Transformo problemas reais em soluções práticas, organizadas e fáceis
+          de manter.
         </div>
+
+        <p>
+          Sou desenvolvedor Python com foco em automação, análise de dados e
+          desenvolvimento web, atuando na criação de soluções práticas para
+          problemas reais, sempre com atenção à organização, clareza e qualidade
+          do código.
+        </p>
+
+        <p>
+          Tenho experiência no desenvolvimento de aplicações web, APIs REST,
+          automações e interfaces interativas. Estou em constante evolução,
+          aplicando boas práticas para entregar soluções confiáveis, escaláveis
+          e bem estruturadas.
+        </p>
       </section>
 
+      <!-- PROJETOS -->
       <section id="projetos" class="secao secao-projetos">
         <h2>Projetos</h2>
 
         <div class="grid-projetos">
           <article class="card">
-            <h3>HMI / SCADA Web — Secador de Germe</h3>
+            <h3>HMI / SCADA Web – Secador de Germe</h3>
             <p>
-              HMI Web com Flask, SVG interativo e API REST para controle do
-              motor (RUN/STOP).
+              Interface web com Flask, SVG interativo e API REST para controle
+              de motor (RUN/STOP).
             </p>
             <a
               href="https://github.com/Wilian-lab/hmi-secador-germe"
               target="_blank"
-              rel="noopener"
-              >Ver no GitHub</a
             >
+              Ver no GitHub
+            </a>
           </article>
 
           <article class="card">
             <h3>Projeto 2</h3>
-            <p>Projeto em desenvolvimento. Em breve.</p>
-            <a href="#" aria-disabled="true">Em breve</a>
+            <p>Projeto em desenvolvimento.</p>
+            <span class="em-breve">Em breve</span>
           </article>
 
           <article class="card">
             <h3>Projeto 3</h3>
-            <p>Projeto em desenvolvimento. Em breve.</p>
-            <a href="#" aria-disabled="true">Em breve</a>
+            <p>Projeto em desenvolvimento.</p>
+            <span class="em-breve">Em breve</span>
           </article>
         </div>
       </section>
 
+      <!-- CONTATO -->
       <section id="contato" class="secao secao-contato">
         <h2>Contato</h2>
-        <p>Me chame por:</p>
 
         <ul class="lista-contato">
           <li>
@@ -118,11 +114,8 @@
           </li>
           <li>
             GitHub:
-            <a
-              href="https://github.com/Wilian-lab"
-              target="_blank"
-              rel="noopener"
-              >github.com/Wilian-lab</a
+            <a href="https://github.com/Wilian-lab" target="_blank"
+              >Wilian-lab</a
             >
           </li>
           <li>
@@ -130,17 +123,13 @@
             <a
               href="https://www.linkedin.com/in/wilian-pereira-9040043a7/"
               target="_blank"
-              rel="noopener"
+              >Perfil</a
             >
-              linkedin.com/in/wilian-pereira
-            </a>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer class="rodape">
-      <p>© 2026 Wilian Pereira.</p>
-    </footer>
+    <footer class="rodape">© 2026 Wilian Pereira</footer>
   </body>
 </html>
