@@ -3,7 +3,7 @@
 Portfólio profissional desenvolvido para apresentar meus projetos, habilidades e minha abordagem como desenvolvedor Python, com foco em automação, análise de dados e desenvolvimento web.
 
 🔗 **Acesse o portfólio online:**  
-https://wilian-lab.github.io/Program_html/
+https://wilian-lab.github.io/portfolio/
 
 ---
 
