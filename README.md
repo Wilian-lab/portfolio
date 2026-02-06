@@ -2,17 +2,14 @@
 
 Portfólio profissional desenvolvido para apresentar meus projetos, habilidades e minha abordagem como desenvolvedor Python, com foco em automação, análise de dados e desenvolvimento web.
 
-
 🔗 **Acesse o portfólio online:**  
-https://wilian-lab.github.io/portfolio/
-
+https://wilian-lab.github.io/Program_html/
 
 ---
 
 ## 👨‍💻 Sobre mim
 
 Sou desenvolvedor Python com foco em automação, análise de dados e desenvolvimento web, atuando na criação de soluções práticas para problemas reais. Tenho forte atenção à organização, clareza e qualidade do código, buscando sempre entregar soluções eficientes e fáceis de manter.
-
 
 ---
 
@@ -21,8 +18,6 @@ Sou desenvolvedor Python com foco em automação, análise de dados e desenvolvi
 ## 🎯 Objetivo profissional
 
 Busco oportunidades como desenvolvedor Python, onde eu possa aplicar meus conhecimentos em automação, análise de dados e desenvolvimento web, contribuindo com soluções eficientes e evoluindo tecnicamente em um ambiente colaborativo.
-
-
 
 ---
 
@@ -34,22 +29,24 @@ Busco oportunidades como desenvolvedor Python, onde eu possa aplicar meus conhec
 - **Visual:** SVG Interativo
 - **Versionamento:** Git & GitHub
 
-
 ---
 
 ## 📂 Projetos em destaque
 
 ### 🔹 HMI / SCADA Web – Secador de Germe
+
 Interface web desenvolvida com Flask, SVG interativo e API REST para controle de motor (RUN/STOP).
 
 🔗 Repositório:  
 https://github.com/Wilian-lab/hmi-secador-germe
 
 ### 🔹 Projeto 2
+
 Projeto em desenvolvimento.  
 Em breve.
 
 ### 🔹 Projeto 3
+
 Projeto em desenvolvimento.  
 Em breve.
 
@@ -58,6 +55,7 @@ Em breve.
 ## 📸 Preview
 
 O portfólio conta com:
+
 - Vídeo de fundo para identidade visual moderna
 - Layout escuro profissional
 - Navegação fluida por seções
