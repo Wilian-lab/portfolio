@@ -3,8 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio – Wilian Pereira</title>
+
+    <!-- SEO -->
+    <title>Wilian Pereira | Desenvolvedor Python & Analista de Dados</title>
+    <meta
+      name="description"
+      content="Desenvolvedor Python especializado em automação, análise de dados e desenvolvimento web. Portfólio com projetos de análise industrial e sistemas SCADA."
+    />
+    <meta
+      name="keywords"
+      content="Python, Desenvolvedor, Análise de Dados, Automação, Flask, Data Science, Portfolio"
+    />
+    <meta name="author" content="Wilian Pereira de Souza" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Wilian Pereira | Desenvolvedor Python & Analista de Dados"
+    />
+    <meta
+      property="og:description"
+      content="Portfólio de projetos em Python, análise de dados e automação industrial."
+    />
+    <meta
+      property="og:url"
+      content="https://wilian-lab.github.io/Program_html/"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
   </head>
   <body>
     <!-- Fundo em vídeo -->
@@ -15,10 +46,11 @@
 
     <header class="topo">
       <nav class="menu">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <a href="#inicio" class="menu-link">Início</a>
+        <a href="#sobre" class="menu-link">Sobre</a>
+        <a href="#habilidades" class="menu-link">Habilidades</a>
+        <a href="#projetos" class="menu-link">Projetos</a>
+        <a href="#contato" class="menu-link">Contato</a>
       </nav>
     </header>
 
@@ -29,107 +61,375 @@
           <div class="hero-texto">
             <span class="tag">Python • Automação • Dados • Front-end</span>
             <h1>Wilian Pereira de Souza</h1>
-            <p>
-              Desenvolvedor Python focado em automação, análise de dados e
-              interfaces web bem estruturadas.
+            <p class="hero-descricao">
+              Desenvolvedor Python focado em automação industrial, análise de
+              dados e interfaces web. Transformo dados complexos em insights
+              acionáveis e desenvolvo soluções que otimizam processos.
             </p>
 
             <div class="acoes">
               <a href="#projetos" class="botao primario">Ver projetos</a>
-              <a href="#contato" class="botao secundario">Contato</a>
+              <a href="#contato" class="botao secundario">Fale comigo</a>
+            </div>
+
+            <!-- Estatísticas -->
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-numero">17+</span>
+                <span class="stat-label">Meses de Dados Analisados</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-numero">3+</span>
+                <span class="stat-label">Projetos Publicados</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-numero">100%</span>
+                <span class="stat-label">Comprometimento</span>
+              </div>
             </div>
           </div>
 
           <div class="hero-foto">
-            <img src="assets/profile.png" alt="Wilian Pereira" />
+            <img src="assets/profile.png" alt="Wilian Pereira de Souza" />
           </div>
         </div>
       </section>
 
       <!-- SOBRE -->
       <section id="sobre" class="secao secao-sobre">
+        <h2 class="secao-titulo">Sobre Mim</h2>
+
         <div class="destaque">
+          <svg
+            class="icone-destaque"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
           Transformo problemas reais em soluções práticas, organizadas e fáceis
           de manter.
         </div>
 
-        <p>
-          Sou desenvolvedor Python com foco em automação, análise de dados e
-          desenvolvimento web, atuando na criação de soluções práticas para
-          problemas reais, sempre com atenção à organização, clareza e qualidade
-          do código.
-        </p>
+        <div class="sobre-conteudo">
+          <p>
+            Sou <strong>desenvolvedor Python</strong> com foco em automação
+            industrial, análise de dados e desenvolvimento web. Atuo na criação
+            de soluções práticas para problemas reais, sempre com atenção à
+            organização, clareza e qualidade do código.
+          </p>
 
-        <p>
-          Tenho experiência no desenvolvimento de aplicações web, APIs REST,
-          automações e interfaces interativas. Estou em constante evolução,
-          aplicando boas práticas para entregar soluções confiáveis, escaláveis
-          e bem estruturadas.
-        </p>
+          <p>
+            Tenho experiência no desenvolvimento de
+            <strong>aplicações web</strong>, <strong>APIs REST</strong>,
+            <strong>automações</strong> e
+            <strong>análises estatísticas</strong>. Trabalho com dados
+            industriais, criando relatórios interativos e dashboards que
+            auxiliam na tomada de decisão.
+          </p>
+
+          <p>
+            Estou em constante evolução, aplicando boas práticas de
+            desenvolvimento para entregar soluções <strong>confiáveis</strong>,
+            <strong>escaláveis</strong> e <strong>bem documentadas</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section id="habilidades" class="secao secao-habilidades">
+        <h2 class="secao-titulo">Habilidades & Tecnologias</h2>
+
+        <div class="grid-habilidades">
+          <!-- Linguagens -->
+          <div class="habilidade-categoria">
+            <h3>💻 Linguagens</h3>
+            <div class="tags-habilidades">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Análise de Dados -->
+          <div class="habilidade-categoria">
+            <h3>📊 Análise de Dados</h3>
+            <div class="tags-habilidades">
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">SciPy</span>
+              <span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">Streamlit</span>
+            </div>
+          </div>
+
+          <!-- Web & APIs -->
+          <div class="habilidade-categoria">
+            <h3>🌐 Web & APIs</h3>
+            <div class="tags-habilidades">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">SVG</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Ferramentas -->
+          <div class="habilidade-categoria">
+            <h3>🛠️ Ferramentas</h3>
+            <div class="tags-habilidades">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">GitHub Pages</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- PROJETOS -->
       <section id="projetos" class="secao secao-projetos">
-        <h2>Projetos</h2>
+        <h2 class="secao-titulo">Projetos em Destaque</h2>
+        <p class="secao-subtitulo">
+          Alguns dos meus trabalhos mais recentes que demonstram minhas
+          habilidades técnicas e de resolução de problemas.
+        </p>
 
         <div class="grid-projetos">
+          <!-- PROJETO DESTAQUE 1 -->
+          <article class="card card-destaque">
+            <div class="badge-destaque">🔬 Análise Industrial</div>
+            <h3>Análise de Processo Industrial — Maceração A vs B</h3>
+            <p>
+              Análise estatística e operacional da relação entre Temperatura e
+              Tempo de Maceração, com estudo comparativo entre dois processos
+              industriais e recomendação técnica baseada em dados reais
+              coletados ao longo de 17 meses.
+            </p>
+
+            <div class="destaques-projeto">
+              <span class="destaque-item"
+                >✓ Análise bidirecional (Temperatura ⇄ Tempo)</span
+              >
+              <span class="destaque-item"
+                >✓ Comparação técnica entre processos A vs B</span
+              >
+              <span class="destaque-item"
+                >✓ Detecção de outliers e análise de estabilidade</span
+              >
+              <span class="destaque-item"
+                >✓ Relatórios HTML interativos com GitHub Pages</span
+              >
+              <span class="destaque-item"
+                >✓ Foco em decisão operacional e gestão industrial</span
+              >
+            </div>
+
+            <div class="tecnologias">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">SciPy</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">Jupyter</span>
+              <span class="tech-tag">GitHub Pages</span>
+            </div>
+
+            <div class="card-acoes">
+              <a
+                href="https://github.com/wilian-lab/rastreio-maceracao"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao-projeto primario"
+              >
+                <svg viewBox="0 0 24 24" class="icone-botao">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                Ver no GitHub
+              </a>
+              <a
+                href="https://wilian-lab.github.io/rastreio-maceracao/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao-projeto secundario"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="icone-botao"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Ver Relatórios
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJETO 2 -->
           <article class="card">
+            <div class="badge-projeto">⚙️ Automação Industrial</div>
             <h3>HMI / SCADA Web – Secador de Germe</h3>
             <p>
-              Interface web com Flask, SVG interativo e API REST para controle
-              de motor (RUN/STOP).
+              Interface web HMI/SCADA desenvolvida com Flask para monitoramento
+              e controle em tempo real de motor industrial. Inclui visualização
+              SVG interativa e API REST para comandos RUN/STOP.
             </p>
+
+            <div class="tecnologias">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">SVG</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML/CSS</span>
+            </div>
+
             <a
               href="https://github.com/Wilian-lab/hmi-secador-germe"
               target="_blank"
+              rel="noopener noreferrer"
+              class="botao-projeto"
             >
+              <svg viewBox="0 0 24 24" class="icone-botao">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
               Ver no GitHub
             </a>
           </article>
 
+          <!-- PROJETO 3 - Streamlit -->
           <article class="card">
-            <h3>Projeto 2</h3>
-            <p>Projeto em desenvolvimento.</p>
-            <span class="em-breve">Em breve</span>
-          </article>
+            <div class="badge-projeto">📱 App Web</div>
+            <h3>Aplicação Streamlit</h3>
+            <p>
+              Aplicação web interativa desenvolvida com Streamlit para
+              visualização e análise de dados em tempo real.
+            </p>
 
-          <article class="card">
-            <h3>Projeto 3</h3>
-            <p>Projeto em desenvolvimento.</p>
-            <span class="em-breve">Em breve</span>
+            <div class="tecnologias">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+
+            <span class="em-breve">🚧 Em desenvolvimento</span>
           </article>
         </div>
       </section>
 
       <!-- CONTATO -->
       <section id="contato" class="secao secao-contato">
-        <h2>Contato</h2>
+        <h2 class="secao-titulo">Vamos Conversar?</h2>
+        <p class="secao-subtitulo">
+          Estou sempre aberto a discutir novos projetos, ideias criativas ou
+          oportunidades.
+        </p>
 
-        <ul class="lista-contato">
-          <li>
-            Email:
-            <a href="mailto:pereirawilian118@gmail.com"
-              >pereirawilian118@gmail.com</a
-            >
-          </li>
-          <li>
-            GitHub:
-            <a href="https://github.com/Wilian-lab" target="_blank"
-              >Wilian-lab</a
-            >
-          </li>
-          <li>
-            LinkedIn:
-            <a
-              href="https://www.linkedin.com/in/wilian-pereira-9040043a7/"
-              target="_blank"
-              >Perfil</a
-            >
-          </li>
-        </ul>
+        <div class="contato-container">
+          <ul class="lista-contato">
+            <li>
+              <svg
+                class="icone-contato"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:pereirawilian118@gmail.com"
+                  >pereirawilian118@gmail.com</a
+                >
+              </div>
+            </li>
+            <li>
+              <svg class="icone-contato" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              <div>
+                <strong>GitHub</strong>
+                <a
+                  href="https://github.com/Wilian-lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@Wilian-lab</a
+                >
+              </div>
+            </li>
+            <li>
+              <svg class="icone-contato" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              <div>
+                <strong>LinkedIn</strong>
+                <a
+                  href="https://www.linkedin.com/in/wilian-pereira-9040043a7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Wilian Pereira</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="cta-contato">
+            <p>💡 <strong>Tem um projeto em mente?</strong></p>
+            <p>Vamos trabalhar juntos e criar algo incrível!</p>
+            <a href="mailto:pereirawilian118@gmail.com" class="botao primario">
+              Enviar Email
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="rodape">© 2026 Wilian Pereira</footer>
+    <footer class="rodape">
+      <p>© 2026 Wilian Pereira de Souza. Desenvolvido com dedicação.</p>
+      <div class="footer-links">
+        <a
+          href="https://github.com/Wilian-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <span>•</span>
+        <a
+          href="https://www.linkedin.com/in/wilian-pereira-9040043a7/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <span>•</span>
+        <a href="mailto:pereirawilian118@gmail.com">Email</a>
+      </div>
+    </footer>
   </body>
 </html>
